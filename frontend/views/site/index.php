@@ -6,7 +6,7 @@
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
 
-$this->title = 'My Yii Application';
+$this->title = 'Работа с SOAP';
 ?>
 <div class="site-index">
 
@@ -36,7 +36,7 @@ $this->title = 'My Yii Application';
 
 
             <div class="form-group">
-                <?= Html::button('Submit', ['class' => 'btn btn-primary', 'id' => 'send-btn', 'onclick' => 'send_soap()']) ?>
+                <?= Html::button('Рассчитать', ['class' => 'btn btn-primary', 'id' => 'send-btn', 'onclick' => 'send_soap()']) ?>
             </div>
 
             <?php ActiveForm::end(); ?>
