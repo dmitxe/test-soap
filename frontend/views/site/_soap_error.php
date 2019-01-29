@@ -14,7 +14,7 @@ use yii\helpers\Html;
         <div class="panel-heading"><?= Html::encode($name) ?></div>
         <div class="panel-body">
             <div class="alert alert-danger">
-                <?= nl2br(Html::encode($message)) ?>
+                <?= is_array($message)? '<pre>'. print_r($message).'</pre>' : nl2br(Html::encode($message)) ?>
             </div>
         </div>
     </div>
